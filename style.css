@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: yellow;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+header img {
+  width: 80px;
+  height: auto;
+}
+
+header h1 {
+  color: black;
+  margin: 10px 0 0 0;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.signal-card, .bonus-card {
+  background-color: #003366;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+}
+
+.signal-card h2 {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+  color: white;
+}
+
+select, .output, #getSignalBtn {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+select {
+  background-color: white;
+  color: black;
+}
+
+.output {
+  text-align: center;
+  background-color: #222;
+  color: white;
+}
+
+#directionBox.direction-up {
+  color: lightgreen;
+  font-weight: bold;
+}
+
+#directionBox.direction-down {
+  color: red;
+  font-weight: bold;
+}
+
+#getSignalBtn {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 16px;
+  width: 100%;
+  border-radius: 6px;
+}
+
+#getSignalBtn:hover {
+  transform: scale(1.05);
+}
+
+.bonus-card h3 {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.bonus-card button {
+  margin-top: 12px;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  color: white;
+}
+
+.socials img {
+  width: 24px;
+  height: 24px;
+  margin: 0 10px;
+  vertical-align: middle;
+  filter: drop-shadow(0 2px 4px black);
+}
+
+@media screen and (max-width: 500px) {
+  header img {
+    width: 60px;
+  }
+
+  .signal-card, .bonus-card {
+    width: 95%;
+  }
+}
